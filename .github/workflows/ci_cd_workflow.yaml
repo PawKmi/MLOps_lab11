@@ -1,4 +1,3 @@
-```yaml
 name: CI/CD workflow
 
 on: workflow_dispatch
@@ -105,4 +104,3 @@ jobs:
           IMAGE_REPOSITORY: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}
           IMAGE_URI: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
           LAMBDA_ROLE_ARN: ${{ steps.lambda_role.outputs.role_arn }}
-```

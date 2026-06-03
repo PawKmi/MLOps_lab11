@@ -7,10 +7,9 @@ AWS_REGION: us-east-1
 ECR_REPOSITORY: sentiment-app-onnx
 
 jobs:
-integration:
-name: checks_and_tests
-```yaml
-runs-on: ubuntu-latest
+  integration:
+    name: checks_and_tests
+    runs-on: ubuntu-latest
 
 steps:
   - name: Checkout code repo

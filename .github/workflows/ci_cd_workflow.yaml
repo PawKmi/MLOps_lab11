@@ -6,10 +6,6 @@ env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: sentiment-app-onnx
 
-defaults:
-  run:
-    working-directory: lab11
-
 jobs:
   integration:
     name: checks_and_tests
